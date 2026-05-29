@@ -29,11 +29,13 @@ Input:
 
 ```text
 start:q0
-finals:q2
+finals:q1,q2
 
-q0-a->q1
-q1-b->q2
-q2-ε->q0
+q0 -a-> q1
+q0 -b-> q2
+q1 -b-> q2
+q2 -a,b-> q2
+q2 -lambda-> q0
 ```
 
 Generated automaton:
